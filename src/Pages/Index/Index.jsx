@@ -244,18 +244,33 @@ const Index = () => {
               Shop Now <i className="ri-arrow-right-line"></i>
             </button>
           </div>
-          <div className=""><small>save 20% off</small>
+          <div className="w-full sm:w-[46%] lg:w-[36%] h-[550px] bg-[url(assets/h3_bn-1.jpg)] bg-cover p-6 flex flex-col items-center pt-15 gap-2 text-white">
+            <small>save 20% off</small>
             <h3>summer 2025</h3>
             <p>smooth& refreshing intensely flavorful,100% dairy free</p>
             <button>
               {" "}
               Shop Now <i className="ri-arrow-right-line"></i>
-            </button></div>
-          <div className=""><small>save 20% off</small>
-            <h3>Best Selling</h3>
-            <p>smooth& Creamy <br />texture low in calorie.</p>
-            
-        </div>
+            </button>
+          </div>
+          <div className="w-full lg:w-[33%] h-[550px] flex flex-col gap-10 ">
+            {/* <small>save 20% off</small> */}
+            <div className="h-[250px] w-full bg-[url(assets/h3_bn-4.jpg)] bg-cover p-6 flex flex-col pt-4 gap-2 text-white">
+              <h3 className="text-3xl">Best Selling</h3>
+              <p className="pt-20">
+                the 1# Best
+                <br />
+                selling Galato
+              </p>
+            </div>
+            <div className="h-[250px] w-full bg-[url(assets/h3_bn-3.jpg)] bg-cover p-6 flex flex-col pt-4 gap-2 text-white">
+              <h3 className="text-3xl">Best Selling</h3>
+              <p className="pt-20">
+                smooth& Creamy <br />
+                texture low in calorie.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </div>
