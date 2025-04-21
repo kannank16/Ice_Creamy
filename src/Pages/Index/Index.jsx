@@ -14,6 +14,8 @@ import slideImage03 from "./../../assets/h3_cat-2.jpg";
 import slideImage04 from "./../../assets/h3_cat-3.jpg";
 import slideImage05 from "./../../assets/h3_cat-7.jpg";
 
+import slideImage06 from './../../assets/product_18_1-600x600.jpg'
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
@@ -236,26 +238,26 @@ const Index = () => {
       <section>
         <div className="flex gap-[10px] flex-wrap lg:flex-nowrap">
           <div className="w-full sm:w-[46%] lg:w-[36%] h-[550px] bg-[url(assets/h3_bn-2.jpg)] bg-cover p-6 flex flex-col items-center pt-15 gap-2 text-white">
-            <small>save 20% off</small>
+            <small className="text-2xl">save 20% off</small>
             <h3>summer 2025</h3>
             <p>smooth& refreshing intensely flavorful,100% dairy free</p>
-            <button>
+            <button className="btn headerbtn">
               {" "}
               Shop Now <i className="ri-arrow-right-line"></i>
             </button>
           </div>
           <div className="w-full sm:w-[46%] lg:w-[36%] h-[550px] bg-[url(assets/h3_bn-1.jpg)] bg-cover p-6 flex flex-col items-center pt-15 gap-2 text-white">
-            <small>save 20% off</small>
+          <small className="text-2xl">save 20% off</small>
             <h3>summer 2025</h3>
             <p>smooth& refreshing intensely flavorful,100% dairy free</p>
-            <button>
+            <button className="btn headerbtn">
               {" "}
               Shop Now <i className="ri-arrow-right-line"></i>
             </button>
           </div>
-          <div className="w-full lg:w-[33%] h-[550px] flex flex-col gap-10 ">
+          <div className="w-full lg:w-[33%] h-[550px] flex flex-col gap-5 ">
             {/* <small>save 20% off</small> */}
-            <div className="h-[250px] w-full bg-[url(assets/h3_bn-4.jpg)] bg-cover p-6 flex flex-col pt-4 gap-2 text-white">
+            <div className="h-[270px] w-full bg-[url(assets/h3_bn-4.jpg)] bg-cover p-6 flex flex-col pt-4 gap-2 text-white">
               <h3 className="text-3xl">Best Selling</h3>
               <p className="pt-20">
                 the 1# Best
@@ -263,7 +265,7 @@ const Index = () => {
                 selling Galato
               </p>
             </div>
-            <div className="h-[250px] w-full bg-[url(assets/h3_bn-3.jpg)] bg-cover p-6 flex flex-col pt-4 gap-2 text-white">
+            <div className="h-[270px] w-full bg-[url(assets/h3_bn-3.jpg)] bg-cover p-6 flex flex-col pt-4 gap-2 text-white">
               <h3 className="text-3xl">Best Selling</h3>
               <p className="pt-20">
                 smooth& Creamy <br />
@@ -273,6 +275,10 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+
+      {/* popular flavor section */}
+
     </div>
   );
 };
