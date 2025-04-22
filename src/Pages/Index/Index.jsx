@@ -14,7 +14,11 @@ import slideImage03 from "./../../assets/h3_cat-2.jpg";
 import slideImage04 from "./../../assets/h3_cat-3.jpg";
 import slideImage05 from "./../../assets/h3_cat-7.jpg";
 
-import slideImage06 from './../../assets/product_18_1-600x600.jpg'
+import slideImage06 from "./../../assets/product_18_1-600x600.jpg";
+import slideImage07 from "./../../assets/product_3_1-600x600.jpg";
+import slideImage08 from "./../../assets/product_5_1-600x600.jpg";
+import slideImage09 from "./../../assets/product_5_2-600x600.jpg";
+import slideImage10 from "./../../assets/product_19_1-600x600.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -247,7 +251,7 @@ const Index = () => {
             </button>
           </div>
           <div className="w-full sm:w-[46%] lg:w-[36%] h-[550px] bg-[url(assets/h3_bn-1.jpg)] bg-cover p-6 flex flex-col items-center pt-15 gap-2 text-white">
-          <small className="text-2xl">save 20% off</small>
+            <small className="text-2xl">save 20% off</small>
             <h3>summer 2025</h3>
             <p>smooth& refreshing intensely flavorful,100% dairy free</p>
             <button className="btn headerbtn">
@@ -276,9 +280,134 @@ const Index = () => {
         </div>
       </section>
 
-
       {/* popular flavor section */}
+      <section id="popular">
+        <h3 className="section_heading">Popular Scoop Flavours</h3>
+        <Swiper
+          className="mt-20 w-full flex"
+          slidesPerView={3}
+          spaceBetween={30}
+          breakpoints={{
+            0: {
+              slidesPerView: 1.5,
+            },
+            768: {
+              slidesPerView: 2.5,
+            },
+            1024: {
+              slidesPerView: 3.5,
+            },
+          }}
+          autoplay={{
+            delay: 1500,
+          }}
+          loop={true}
+          modules={[Autoplay]}
+        >
+          <SwiperSlide>
+            <div className="relative flex flex-col gap-[10px] card ">
+              <div className="w-full">
+                <img src={slideImage06} alt="slideImage06" className="w-full" />
+                <div className="absolute top-5 flex flex-col right-5 gap-2 icons-card hidden">
+                  <i className="ri-heart-line icon-card"></i>
+                  <i className="ri-shuffle-line icon-card"></i>
+                  <i className="ri-eye-line icon-card"></i>
+                </div>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <div className="">
+                  <i className="ri-star-fill"></i>
+                  <i className="ri-star-fill"></i>
+                  <i className="ri-star-fill"></i>
+                  <i className="ri-star-fill"></i>
+                  <i className="ri-star-line"></i>
+                </div>
+                <h2 className="text-lg font-bold text-center text-rose-500">
+                  Chocolate Fudge Browning{" "}
+                </h2>
+                <span>Rs.45</span>
+              </div>
+            </div>
+          </SwiperSlide>
 
+          <SwiperSlide>
+            <div className="relative flex flex-col gap-[10px] card ">
+              <div className="w-full ">
+                <img src={slideImage07} alt="slideImage07" className="w-full" />
+                <div className="absolute top-5 flex flex-col right-5 gap-2 icons-card hidden">
+                  <i className="ri-heart-line icon-card"></i>
+                  <i className="ri-shuffle-line icon-card"></i>
+                  <i className="ri-eye-line icon-card"></i>
+                </div>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <div className="">
+                  <i className="ri-star-fill"></i>
+                  <i className="ri-star-fill"></i>
+                  <i className="ri-star-fill"></i>
+                  <i className="ri-star-fill"></i>
+                  <i className="ri-star-line"></i>
+                </div>
+                <h2 className="text-lg font-bold text-center text-rose-500">
+                  Boom Balattl's IceCream{" "}
+                </h2>
+                <span>Rs.75</span>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="relative flex flex-col gap-[10px] card ">
+              <div className="w-full">
+                <img src={slideImage08} alt="slideImage08" className="w-full" />
+                <div className="absolute top-5 flex flex-col right-5 gap-2 icons-card hidden">
+                  <i className="ri-heart-line icon-card"></i>
+                  <i className="ri-shuffle-line icon-card"></i>
+                  <i className="ri-eye-line icon-card"></i>
+                </div>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <div className="">
+                  <i className="ri-star-fill"></i>
+                  <i className="ri-star-fill"></i>
+                  <i className="ri-star-fill"></i>
+                  <i className="ri-star-fill"></i>
+                  <i className="ri-star-line"></i>
+                </div>
+                <h2 className="text-lg font-bold text-center text-rose-500">
+                  Peekaboo Ice Cream{" "}
+                </h2>
+                <span>Rs.145</span>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="relative flex flex-col gap-[10px] card ">
+              <div className="w-full">
+                <img src={slideImage10} alt="slideImage10" className="w-full" />
+                <div className="absolute top-5 flex flex-col right-5 gap-2 icons-card hidden">
+                  <i className="ri-heart-line icon-card"></i>
+                  <i className="ri-shuffle-line icon-card"></i>
+                  <i className="ri-eye-line icon-card"></i>
+                </div>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <div className="">
+                  <i className="ri-star-fill"></i>
+                  <i className="ri-star-fill"></i>
+                  <i className="ri-star-fill"></i>
+                  <i className="ri-star-fill"></i>
+                  <i className="ri-star-line"></i>
+                </div>
+                <h2 className="text-lg font-bold text-center text-rose-500">
+                  Beckon Fudge Browning{" "}
+                </h2>
+                <span>Rs.175</span>
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </section>
     </div>
   );
 };
