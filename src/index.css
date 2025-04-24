@@ -16,7 +16,9 @@
 
 
 
-
+*{
+    scroll-behavior: smooth;
+}
 
 
 .Nav-Link{

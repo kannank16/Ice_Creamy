@@ -28,18 +28,18 @@ const Nav = () => {
               </a>
             </li>
             <li className="nav-wrapper">
-              <a href="" className="Nav-Link ">
+              <a href="#popular" className="Nav-Link ">
                 Popular
               </a>
             </li>
             <li className="nav-wrapper">
-              <a href="" className="Nav-Link ">
+              <a href="#testimonials" className="Nav-Link ">
                 Testimonials
               </a>
             </li>
 
             <li className="nav-wrapper">
-              <a href="" className="Nav-Link ">
+              <a href="#contact" className="Nav-Link ">
                 Contact
               </a>
             </li>
